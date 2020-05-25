@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  server:
+    build: ./
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./notebooks:/opt/notebooks
+      - ./jupyter:/root/.jupyter
